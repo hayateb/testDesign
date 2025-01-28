@@ -43,7 +43,11 @@ const DesignPage = () => {
                         </div>
                         
                         <div>
-                              <img src="/sa.png" alt="Mixed Avocado Smoothy" width={500} height={500} />
+                              <Card>
+                                    <img src="/sa.png" alt="Mixed Avocado Smoothy" width={500} height={500} />
+                                    
+                              </Card>
+                              
                         </div>
                   </div>
             </div>

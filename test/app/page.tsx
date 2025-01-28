@@ -1,3 +1,4 @@
+
 import DesignPage from "@/components/pages/design";
 import Image from "next/image";
 
