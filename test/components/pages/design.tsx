@@ -3,6 +3,7 @@ import React from "react";
 
 import { Button, Card } from "antd";
 import Link from "next/link";
+import Image from "next/image";
 
 const DesignPage = () => { 
 

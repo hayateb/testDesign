@@ -1,10 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
+  reactStrictMode: true,
   pwa: {
     disable: true, 
   },
-  
 };
 
-export default nextConfig;
+module.exports = nextConfig; 
+
