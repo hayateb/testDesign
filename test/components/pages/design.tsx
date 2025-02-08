@@ -4,7 +4,7 @@ import React from "react";
 import {SearchOutlined, TruckOutlined , LockOutlined}  from "@ant-design/icons";
 import UiForm from "../ui/form";
 import Link from "next/link";
-import { Button, Flex } from "antd";
+import { Button, Flex ,Card} from "antd";
 import Image from "next/image";
 import UiButton from "../ui/button";
 import { useState } from "react";
@@ -39,7 +39,7 @@ const DesignPage = () => {
                                           
                                 }}><span style={{color:"#f17228"}}>Food</span><span style={{color:"#ffb30e"}}>Wagon</span></p>
                                 </div>
-                              <UiButton onClick={() => {handleOpen}} color="orange">Add Food</UiButton>
+                              <UiButton onClick={() => {handleOpen}}style={{color:"orange"}} >Add Food</UiButton>
                               
                         </div>
                         <div style={{backgroundColor: "orange", padding: "1rem", borderRadius: "1rem", color: "white"}}>
@@ -78,7 +78,7 @@ const DesignPage = () => {
                         <h2>Featured Restaurant</h2>
 
 
-                        {/* <div style={{
+                        <div style={{
                               display: "flex", 
                               justifyContent: "space-between", 
                               alignItems: "center", 
@@ -96,7 +96,7 @@ const DesignPage = () => {
                                     
                               </Card>
                               
-                        </div> */}
+                        </div>
                   </div>
             </div>
       );
