@@ -1,8 +1,8 @@
 "use client"
 import React from "react";
 
-import {TruckOutlined }  from "@ant-design/icons";
-import { Card, Modal } from "antd";
+import {SearchOutlined, TruckOutlined }  from "@ant-design/icons";
+import UiForm from "../ui/form";
 import Link from "next/link";
 import Image from "next/image";
 import UiButton from "../ui/button";
@@ -41,10 +41,22 @@ const DesignPage = () => {
                         <div style={{backgroundColor: "orange", padding: "1rem", borderRadius: "1rem", color: "white"}}>
                               <h1>Are You Starving?</h1>
                               <p>With just a few clicks, find nearby restaurants accessible to you.</p>
-                              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                                    <Modal>
+                              <div style={{ display: "flex", justifyContent: "space-between", alignItems:"center" }}>
+                                    <UiForm>
+                                          <h1>jhfjdlkfjlasdfkasdf</h1>
                                           
-                                    </Modal>
+                                          
+                                          {/* <div style={{display: "flex" , alignItems:"center"}}>
+                                                <Form.Item>
+                                                <input type="text" placeholder="what would you like to do today?" style={{padding: "0.5rem", borderRadius: "0.5rem", width:"100%",textDecoration:""}}/>
+                                          </Form.Item>
+                                          <Form.Item>
+                                                <button style={{padding: "0.5rem", borderRadius: "0.5rem", backgroundColor: "#f17228", color: "white"}}> <SearchOutlined/> find food</button>
+                                          </Form.Item>
+
+                                          </div> */}
+                                          
+                                    </UiForm>
                                 
                                     <img src="/found.avif" alt="food" width={200} height={200} />
                               </div>
