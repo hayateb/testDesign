@@ -1,9 +1,10 @@
 "use client"
 import React from "react";
 
-import {SearchOutlined, TruckOutlined }  from "@ant-design/icons";
+import {SearchOutlined, TruckOutlined , LockOutlined}  from "@ant-design/icons";
 import UiForm from "../ui/form";
 import Link from "next/link";
+import { Button, Flex } from "antd";
 import Image from "next/image";
 import UiButton from "../ui/button";
 import { useState } from "react";
@@ -15,6 +16,9 @@ const DesignPage = () => {
       const handleOpen = () => { 
             setVisible(true)
 
+      }
+      const handleDeliver = () => {
+            
       }
 
       return (
@@ -43,18 +47,18 @@ const DesignPage = () => {
                               <p>With just a few clicks, find nearby restaurants accessible to you.</p>
                               <div style={{ display: "flex", justifyContent: "space-between", alignItems:"center" }}>
                                     <UiForm>
-                                          <h1>jhfjdlkfjlasdfkasdf</h1>
-                                          
-                                          
-                                          {/* <div style={{display: "flex" , alignItems:"center"}}>
-                                                <Form.Item>
-                                                <input type="text" placeholder="what would you like to do today?" style={{padding: "0.5rem", borderRadius: "0.5rem", width:"100%",textDecoration:""}}/>
-                                          </Form.Item>
-                                          <Form.Item>
-                                                <button style={{padding: "0.5rem", borderRadius: "0.5rem", backgroundColor: "#f17228", color: "white"}}> <SearchOutlined/> find food</button>
-                                          </Form.Item>
-
-                                          </div> */}
+                                          <div style={{ }}> 
+                                                <div style={{display:"flex", justifyContent:"start", alignItems:"center"}}>
+                                                      <UiButton style={{backgroundColor:"#fef1e9" ,color:"#f17228"} } onClick={handleDeliver}>Delivery</UiButton>
+                                                      <LockOutlined style={{color:"black"}} />
+                                                      <p style={{color: "balck"}}>Pick Up</p>
+                                                </div>
+                                                <div style={{display:"flex", justifyContent:"space-between"}}>
+                                                      <input type="text" placeholder="what would you like to do today?" style={{padding: "0.25rem", borderRadius: "0.5rem"}}/>
+                                                      <UiButton style={{padding: "0.5rem", borderRadius: "0.5rem", backgroundColor: "#f17228", color: "white"}} onClick={handleOpen}> <SearchOutlined/> find food</UiButton>
+                                                </div>
+                                                
+                                          </div>
                                           
                                     </UiForm>
                                 

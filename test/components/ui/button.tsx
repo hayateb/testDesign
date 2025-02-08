@@ -1,29 +1,34 @@
 import React, { Children } from "react";
 import { Button, Card } from "antd";
 interface button{
-      color: string,
+      style: React.CSSProperties,
       onClick: () => void,
       children: React.ReactNode
       }
       
 
 
-export default function UiButton({onClick, children}: button) { 
+export default function UiButton({style, onClick, children}: button) { 
     
 
       return (
-            <div style={{
+                  <div style={{
                   backgroundColor: "orange",
                   textAlign: "center",
                   padding: "1rem",
                   borderRadius: "1rem",
-                  color: "white",
+                        color: "white",
+                  ...style
 
             }}> 
                   
             {children}
 
             </div>
+
+           
+
+            
             
       )
 
