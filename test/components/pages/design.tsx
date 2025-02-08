@@ -39,7 +39,7 @@ const DesignPage = () => {
                                           
                                 }}><span style={{color:"#f17228"}}>Food</span><span style={{color:"#ffb30e"}}>Wagon</span></p>
                                 </div>
-                              <UiButton onClick={() => {handleOpen}}style={{color:"orange"}} >Add Food</UiButton>
+                              <UiButton onClick={() => {handleOpen}}style={{color:"white"}} >Add Food</UiButton>
                               
                         </div>
                         <div style={{backgroundColor: "orange", padding: "1rem", borderRadius: "1rem", color: "white"}}>
