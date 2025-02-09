@@ -20,6 +20,7 @@ const DesignPage = () => {
       const handleDeliver = () => {
             
       }
+      const handleloadMore = () => { }
 
       return (
             <div>
@@ -75,26 +76,38 @@ const DesignPage = () => {
                   </div>
 
                   <div>
-                        <h2>Featured Restaurant</h2>
+                        <div style={{textAlign: "center", padding: "1rem"}}>
+                              <h2>Featured Restaurant</h2>
+                        </div>
+                        
 
 
                         <div style={{
                               display: "flex", 
-                              justifyContent: "space-between", 
-                              alignItems: "center", 
-                              padding: "1rem 0", 
-                              borderBottom: "1px solid #ccc"
+                              flexDirection: "column",
+                              borderBottom: "1px solid #ccc",
+                              gap: "1rem",
+                              alignItems: "center"
                         }}>
-                              <Card>
-                                    <img src="/sample.png" alt="Bow Lasagna" width={500} height={500} />
-                              </Card>
-                        </div>
+                              <div style={{display: "flex", justifyContent: "space-between" , gap: "1rem"}}>
+                                    <Card ><img src="/sample.png" alt="Bow Lasagna" width={200} height={200} /></Card>
+                                    <Card><img src="/sa.png" alt="Mixed Avocado Smoothy" width={200} height={200} /></Card>
+                                    <Card><img src="pic3.avif" alt="pancake" width={200} height={200} /></Card>
+                                    <Card><img src="pic4.jpg" alt="capcake" width={200} height={200} /></Card>
+                              </div>
                         
-                        <div>
-                              <Card>
-                                    <img src="/sa.png" alt="Mixed Avocado Smoothy" width={500} height={500} />
-                                    
-                              </Card>
+                              
+                              <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", gap: "1rem"}}>
+                                    <Card><img src="pic5.jpg" alt="creamy stake" width={200} height={200} /></Card>
+                                    <Card><img src="pic6.jpg" alt="stake with potatos" width={200} height={200} /></Card>
+                                    <Card><img src="pic7.png" alt="indian spicy food" width={200} height={200} /></Card>
+                                    <Card><img src="pic8.jpg" alt="stake omelet" width={200} height={200} /></Card>
+
+                              </div>
+                              <div>
+                                    <UiButton style={{backgroundColor:"#f17228", color:"white", width:"100px"}} onClick={handleloadMore}>load More</UiButton>
+                              </div>
+                              
                               
                         </div>
                   </div>
